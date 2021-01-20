@@ -57,9 +57,9 @@ article > * + * {
   font-family: 'Roboto' sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 35px;
-  color: #00FF19;
+  font-size: 28px;
+  line-height: 33px;
+  color: #fff;
 }
 .text-25px {
   font-family: 'Roboto' sans-serif;
@@ -67,7 +67,7 @@ article > * + * {
   font-weight: bold;
   font-size: 25px;
   line-height: 29px;
-  color: #DDDDDD;
+  color: #b3b3b3;
 }
 body {
   position: relative;
@@ -125,9 +125,12 @@ body {
   padding: 50px;
   width: 444px;
   height: 519px;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(159, 255, 142, 0.4);
   backdrop-filter: blur(10px);
   border-radius: 30px;
+  .login-menu__password {
+    margin-top: 50px;
+  }
   .login-menu__login, .login-menu__password {
     width: 100%;
   }
@@ -140,16 +143,29 @@ body {
 }
 input {
   width: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: 0;
+}
+input:active {
+  outline: none;
+}
+input:focus {
+  outline: none;
 }
 .login-menu__button {
   background-color: #fff;
-  padding: 5px 75px;
+  padding: 6px 75px;
   border-radius: 10px;
   margin: 40px 0;
+  color: #2fd440;
 }
 .login-menu__button:hover {
-  color: #00FF19;
+  color: #2fd440;
   text-decoration: none;
+}
+.login-menu__forgot-password {
+  color: #DDDDDD;
 }
 .login-menu__forgot-password:hover {
   color: #DDDDDD;
@@ -161,10 +177,7 @@ input {
   height: 100px;
   right: 50px;
   bottom: 30px;
-
-  background: rgba(70, 178, 52, 0.4);
+  background: rgba(159, 255, 142, 0.4);
   backdrop-filter: blur(10px);
-  /* Note: backdrop-filter has minimal browser support */
-
   border-radius: 30px;
 }
