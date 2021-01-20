@@ -1,12 +1,15 @@
 *,
 *::before,
 ::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 ul[class],
 ol[class] {
   padding: 0;
 }
+
 body,
 h1,
 h2,
@@ -35,24 +38,32 @@ ul[class],
 ol[class] {
   list-style: none;
 }
+
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
+
 img {
   max-width: 100%;
   display: block;
 }
+
 article > * + * {
   margin-top: 1em;
 }
+
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
+
 .text-bold {
   font-family: 'Roboto' sans-serif;
   font-style: normal;
@@ -61,6 +72,7 @@ article > * + * {
   line-height: 35px;
   color: #00FF19;
 }
+
 .text-25px {
   font-family: 'Roboto' sans-serif;
   font-style: normal;
@@ -69,26 +81,34 @@ article > * + * {
   line-height: 29px;
   color: #DDDDDD;
 }
+
 body {
   position: relative;
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.bg {
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-  }
+
+.bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
+
 .logo__bg {
   position: absolute;
   width: 498px;
@@ -96,7 +116,8 @@ body {
   left: 50px;
   top: 25px;
   background: rgba(255, 255, 255, 0.01);
-  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   border-radius: 100px;
 }
 
@@ -113,58 +134,72 @@ body {
   line-height: 112px;
   color: #05FF00;
   text-shadow: 7px 7px 0px rgba(0, 0, 0, 0.25);
-  span {
-    color: #fff;
-  }
+}
+
+.logo__text span {
+  color: #fff;
 }
 
 .login-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 50px;
   width: 444px;
   height: 519px;
   background: rgba(69, 159, 54, 0.7);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border-radius: 30px;
-  .login-menu__login, .login-menu__password {
-    width: 100%;
-  }
-  .login-menu__login, .login-menu__password {
-    .text-bold {
-      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-      margin-bottom: 15px;
-    }
-  }
 }
+
+.login-menu .login-menu__login, .login-menu .login-menu__password {
+  width: 100%;
+}
+
+.login-menu .login-menu__login .text-bold, .login-menu .login-menu__password .text-bold {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 15px;
+}
+
 input {
   width: 100%;
 }
+
 .login-menu__button {
   background-color: #fff;
   padding: 5px 75px;
   border-radius: 10px;
   margin: 40px 0;
 }
+
 .login-menu__button:hover {
   color: #00FF19;
   text-decoration: none;
 }
+
 .login-menu__forgot-password:hover {
   color: #DDDDDD;
   text-decoration: none;
 }
+
 .check-button {
   position: absolute;
   width: 340px;
   height: 100px;
   right: 50px;
   bottom: 30px;
-
   background: rgba(70, 178, 52, 0.5);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   /* Note: backdrop-filter has minimal browser support */
-
   border-radius: 30px;
 }
+/*# sourceMappingURL=style.css.map */
