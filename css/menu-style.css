@@ -127,7 +127,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: calc(36px + (96 - 36) * ((100vw - 360px) / (1980 - 360)));
-  line-height: 112px;
+  line-height: calc(42px + (112 - 42) * ((100vw - 360px) / (1980 - 360)));
   color: #05FF00;
   text-shadow: 7px 7px 0px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
@@ -139,5 +139,11 @@ body {
 
 .logo__text span {
   color: #fff;
+}
+
+@media (max-width: 360px) {
+  Body {
+    display: none;
+  }
 }
 /*# sourceMappingURL=menu-style.css.map */
