@@ -57,16 +57,16 @@ article > * + * {
   font-family: 'Roboto' sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 33px;
-  color: #fff;
+  font-size: calc(18px + (28 - 18) * ((100vw - 360px) / (1980 - 360)));
+  line-height: calc(21px + (33 - 21) * ((100vw - 360px) / (1980 - 360)));
+  color: #ffffff;
 }
 .text-25px {
   font-family: 'Roboto' sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 29px;
+  font-size: calc(14px + (25 - 14) * ((100vw - 360px) / (1980 - 360)));
+  line-height: calc(16px + (29 - 16) * ((100vw - 360px) / (1980 - 360)));
   color: #b3b3b3;
 }
 body {
@@ -81,12 +81,12 @@ body {
 .bg {
   img {
     position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
     width: 100vw;
     height: 100vh;
+    top: 0;
+    left: 0;
     z-index: -1;
+    object-fit: cover;
   }
 }
 .logo__bg {
@@ -109,7 +109,7 @@ body {
   font-family: 'Roboto' sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: calc(20px + (96 - 20) * ((100vw - 360px) / (1980 - 360)));
+  font-size: calc(36px + (96 - 36) * ((100vw - 360px) / (1980 - 360)));
   line-height: 112px;
   color: #05FF00;
   text-shadow: 7px 7px 0px rgba(0, 0, 0, 0.25);
@@ -122,14 +122,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
-  width: 444px;
-  height: 519px;
+  padding: calc(30px + (50 - 30) * ((100vw - 360px) / (1980 - 360)));
+  width: calc(264px + (444 - 264) * ((100vw - 360px) / (1980 - 360)));
+  height: calc(309px + (519 - 309) * ((100vw - 360px) / (1980 - 360)));
   background: rgba(159, 255, 142, 0.4);
   backdrop-filter: blur(10px);
   border-radius: 30px;
   .login-menu__password {
-    margin-top: 50px;
+    margin-top: calc(35px + (50 - 35) * ((100vw - 360px) / (1980 - 360)));
   }
   .login-menu__login, .login-menu__password {
     width: 100%;
@@ -157,7 +157,7 @@ input:focus {
   background-color: #fff;
   padding: 6px 75px;
   border-radius: 10px;
-  margin: 40px 0;
+  margin: calc(24px + (40 - 24) * ((100vw - 360px) / (1980 - 360))) 0;
   color: #2fd440;
 }
 .login-menu__button:hover {
