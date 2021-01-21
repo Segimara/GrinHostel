@@ -63,18 +63,6 @@ body {
   align-items: center;
   background: url('../imgs/osenniy-gorod 1.png' ) 0 0/cover no-repeat fixed;
 }
-//.bg {
-//  img {
-//    position: absolute ;
-//    width: 100vw;
-//    height: 100vh;
-//    top: 0;
-//    left: 0;
-//    z-index: -1;
-//    object-fit: cover;
-//  }
-//}
-
 .logo__text {
   display: inline-block;
   font-family: 'Roboto', sans-serif;
@@ -92,7 +80,9 @@ body {
     color: #fff;
   }
 }
-
+.menu {
+  padding: 50px;
+}
 .menu__item {
   margin-top: 30px;
   background: rgba(70, 178, 52, 0.5);

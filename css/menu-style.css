@@ -103,6 +103,10 @@ body {
   color: #fff;
 }
 
+.menu {
+  padding: 50px;
+}
+
 .menu__item {
   margin-top: 30px;
   background: rgba(70, 178, 52, 0.5);

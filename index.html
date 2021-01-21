@@ -9,30 +9,38 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="bg">
-    <img src="./imgs/osenniy-gorod 1.png" alt="">
+  <div class="container d-flex flex-column">
+    <header class="d-flex justify-content-between ">
+      <div class="logo col-4">
+        <p class="logo__text">Grin<span>Hostel</span></p>
+      </div>
+      <nav class="nav navbar">
+        <div class="nav__item"><img src="./imgs/Информация 1.svg" alt=""></div>
+        <div class="nav__item"><img src="./imgs/Календарь 1.svg" alt=""></div>
+        <div class="nav__item"><img src="./imgs/Дом 2.svg" alt=""></div>
+        <div class="nav__item"><img src="/imgs/Лампочка 1.svg" alt=""></div>
+        <div class="nav__item"><img src="./imgs/acount 1 1.svg" alt=""></div>
+        <div class="nav__item"><img src="./imgs/резюме 1.svg" alt=""></div>
+        <div class="nav__log-in"><p class="text-bold">Вход</p></div>
+      </nav>
+    </header>
+    <main>
+      <div class="login-menu">
+        <div class="login-menu__login">
+          <p class="text-bold">Логин</p>
+          <input type="login" placeholder="Введите логин">
+        </div>
+        <div class="login-menu__password">
+          <p class="text-bold">Пароль</p>
+          <input type="password" placeholder="Введите пароль">
+        </div>
+        <a href="" class="login-menu__button text-bold">Вход</a>
+        <a href="" class="login-menu__forgot-password text-25px">Востановить пароль</a>
+      </div>
+      <div class="check-button">
+        <p></p>
+      </div>
+    </main>
   </div>
-  <header>
-    <div class="logo">
-      <p class="logo__text">Grin<span>Hostel</span></p>
-    </div>
-  </header>
-  <main>
-    <div class="login-menu">
-      <div class="login-menu__login">
-        <p class="text-bold">Логин</p>
-        <input type="login" placeholder="Введите логин">
-      </div>
-      <div class="login-menu__password">
-        <p class="text-bold">Пароль</p>
-        <input type="password" placeholder="Введите пароль">
-      </div>
-      <a href="./menu.html" class="login-menu__button text-bold">Вход</a>
-      <a href="" class="login-menu__forgot-password text-25px">Востановить пароль</a>
-    </div>
-    <div class="check-button">
-      <p></p>
-    </div>
-  </main>
 </body>
 </html>
