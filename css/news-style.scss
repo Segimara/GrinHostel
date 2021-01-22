@@ -101,8 +101,14 @@ body {
   .news__body {
     padding: 10px;
     .avatar {
-      
+      width: 75px;
+      height: 75px;
       border-radius: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
