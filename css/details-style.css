@@ -1,0 +1,286 @@
+.text-bold {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(18px + (36 - 18) * ((100vw - 280px) / (1980 - 280)));
+    line-height: calc(21px + (42 - 21) * ((100vw - 280px) / (1980 - 280)));
+    color: #ffffff;
+}
+  
+.text-25px {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(14px + (25 - 14) * ((100vw - 280px) / (1980 - 280)));
+    line-height: calc(16px + (29 - 16) * ((100vw - 280px) / (1980 - 280)));
+    color: #b3b3b3;
+}
+  
+.container {
+    height: 100vh;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url("../imgs/osenniy-gorod 1.png") 0 0/cover no-repeat fixed;
+}
+  
+main {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+}
+  
+.logo__text {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(36px + (64 - 36) * ((100vw - 280px) / (1140 - 280)));
+    line-height: calc(42px + (75 - 42) * ((100vw - 280px) / (1140 - 280)));
+    color: #05FF00;
+    text-shadow: 7px 7px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.01);
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+    padding: 10px;
+}
+  
+.logo__text span {
+    color: #fff;
+}
+  
+.nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+}
+  
+.nav__item {
+    width: 80px;
+    height: 80px;
+    background: rgba(70, 178, 52, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 5px;
+}
+  
+.nav__log-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: calc(94px + (160 - 94) * ((100vw - 280px) / (1140 - 280)));
+    height: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
+    background: rgba(70, 178, 52, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+  
+.nav__log-in p {
+    color: #fff;
+}
+  
+.nav__log-in:hover {
+    color: #fff;
+    text-decoration: none;
+}
+  
+.navbar-toggler {
+    padding: 0;
+}
+  
+.navbar-toggler:focus {
+    outline: none;
+}
+  
+.burger {
+    display: block;
+    position: relative;
+    width: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
+    height: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
+    background: rgba(70, 178, 52, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+  
+.burger span {
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    left: 15%;
+    top: 47%;
+}
+  
+.burger::after, .burger::before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    left: 15%;
+}
+  
+.burger::after {
+    bottom: 25%;
+}
+  
+.burger::before {
+    top: 25%;
+}
+  
+ul.navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+  
+ul.navbar-nav li {
+    margin: 4px;
+}
+
+table {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    background: rgba(70, 178, 52, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 20px auto 20px;
+    border-radius: 10px;
+}
+  
+thead tr th {
+    font-weight: bold;
+}
+  
+td {
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+}
+  
+tr:nth-child(odd) {
+    background-color: rgba(72, 146, 59, 0.5);
+}
+  
+.table1 th {
+    font-size: 14px;
+    color: #f3f3f3;
+    border-bottom: 2px solid #ffffff;
+    padding: 10px 8px;
+}
+  
+.table1 td {
+    color: #ffffff;
+    padding: 9px 8px;
+}
+  
+.table1 tr:hover td {
+    color: #ffffff;
+}
+  
+@media (min-width: 1140px) {
+    .logo__text {
+      font-size: 64px;
+      line-height: 75px;
+    }
+    .nav__log-in {
+      width: 160px;
+      height: 80px;
+    }
+    .text-bold {
+      font-size: 36px;
+      line-height: 42px;
+    }
+    .text-25px {
+      font-size: 25px;
+      line-height: 29px;
+    }
+    .burger {
+      width: 80px;
+      height: 80px;
+    }
+}
+/*# sourceMappingURL=list-style.css.map */
+
+
+/*from uguha*/
+.tab-content{
+    background-color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+}
+.nav-tabs .nav-link{
+    color: #fff;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #05FF00;
+}
+.main__content{
+    min-width: 100%;
+}
+.table thead th{
+    border-bottom: 0;
+}
+.tr-w-100{
+    width: 100%;
+    margin: auto;
+}
+.table-details{
+    margin: 0;
+}
+.table-details th{
+    background-color: rgba(67, 117, 59, 0.9);
+}
