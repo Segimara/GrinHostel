@@ -85,7 +85,6 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
 }
 .logo__text {
@@ -107,23 +106,24 @@ main {
 }
 
 .login-menu {
+  margin-top: 5%;
   align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: calc(30px + (50 - 30) * ((100vw - 280px) / (1980 - 280)));
   width: calc(264px + (444 - 264) * ((100vw - 280px) / (1980 - 280)));
-  height: calc(309px + (519 - 309) * ((100vw - 280px) / (1980 - 280)));
+
   background: rgba(159, 255, 142, 0.4);
   backdrop-filter: blur(10px);
   border-radius: 30px;
-  .login-menu__password {
+  .login-menu__password, .login-menu__document {
     margin-top: calc(35px + (50 - 35) * ((100vh - 280px) / (1980 - 280)));
   }
-  .login-menu__login, .login-menu__password {
+  .login-menu__login, .login-menu__password, .login-menu__document {
     width: 100%;
   }
-  .login-menu__login, .login-menu__password {
+  .login-menu__login, .login-menu__password, .login-menu__document {
     .text-bold {
       text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
       margin-bottom: 15px;

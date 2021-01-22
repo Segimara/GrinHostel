@@ -101,46 +101,6 @@ body {
   background: url("../imgs/osenniy-gorod 1.png") 0 0/cover no-repeat fixed;
 }
 
-.news {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  position: relative;
-  background-color: rgba(242, 255, 240, 0.8);
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-}
-
-.news .news__head {
-  padding: 10px 0 5px 20px;
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-  background-color: rgba(72, 146, 59, 0.9);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-}
-
-.news .news__body {
-  padding: 10px;
-}
-
-.news .news__body .avatar {
-  border-radius: 50%;
-}
-
 .logo__text {
   display: inline-block;
   font-family: 'Roboto', sans-serif;
@@ -276,6 +236,107 @@ ul.navbar-nav {
 
 ul.navbar-nav li {
   margin: 4px;
+}
+
+.news {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  position: relative;
+  background-color: rgba(242, 255, 240, 0.8);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.news a:hover {
+  text-decoration: none;
+}
+
+.news .news__head {
+  padding: 10px 0 5px 20px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(72, 146, 59, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.news .news__body .news__item {
+  padding: 25px 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-bottom: 3px solid #fff;
+  -webkit-box-shadow: inset 0 -2px 2px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 -2px 2px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+.news .news__body .news__item .news__announce {
+  -ms-flex-item-align: start;
+      align-self: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.news .news__body .news__item .news__announce .avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.news .news__body .news__item .news__announce .avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news .news__body .news__item .news__main-text {
+  width: calc(100% - 95px);
+  padding-right: 40px;
+}
+
+.news .news__body .news__item .news__main-text .news-text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.news .news__body .news__item .news__main-text h4 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.news .news__body .news__item a {
+  margin-top: 10px;
 }
 
 @media (min-width: 1140px) {
