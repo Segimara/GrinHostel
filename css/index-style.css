@@ -308,6 +308,62 @@ input::placeholder {
   color: #fff;
 }
 
+.burger {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: rgba(70, 178, 52, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.burger span {
+  background-color: #fff;
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  left: 11px;
+  top: 39px;
+}
+
+.burger::after, .burger::before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  left: 11px;
+}
+
+.burger::after {
+  bottom: 19px;
+}
+
+.burger::before {
+  top: 19px;
+}
+
+ul.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul.navbar-nav li {
+  margin: 4px;
+}
+
 @media (min-width: 1140px) {
   .logo__text {
     font-size: 64px;

@@ -207,9 +207,52 @@ input::placeholder {
     color: #fff;
   }
 }
+.burger {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: rgba(70, 178, 52, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  span {
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    left: 11px;
+    top: 39px;
+  };
+  
+}
+.burger::after,.burger::before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  left: 11px;
+}
+.burger::after {
+  bottom: 19px;
+}
+.burger::before {
+  top: 19px;
+}
+ul.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  li {
+    margin: 4px
+  }
+}
+
 @media (min-width: 1140px) {
   .logo__text {
     font-size: 64px;
     line-height: 75px;
   }
+  
 }
