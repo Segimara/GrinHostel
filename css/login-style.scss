@@ -181,9 +181,10 @@ input::placeholder {
   border-radius: 30px;
 }
 .nav {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  column-gap: 10px;
+  padding: 0; 
 }
 .nav__item {
   width: 80px;
@@ -198,8 +199,8 @@ input::placeholder {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 160px;
-  height: 80px;
+  width: calc(94px + (160 - 94) * ((100vw - 280px) / (1140 - 280)));
+  height: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
   background: rgba(70, 178, 52, 0.5);
   backdrop-filter: blur(10px);
   border-radius: 10px;
@@ -207,11 +208,21 @@ input::placeholder {
     color: #fff;
   }
 }
+.nav__log-in:hover {
+  color:#fff;
+  text-decoration: none;
+}
+.navbar-toggler {
+  padding: 0;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
 .burger {
   display: block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
+  height: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
   background: rgba(70, 178, 52, 0.5);
   backdrop-filter: blur(10px);
   border-radius: 10px;
@@ -220,10 +231,9 @@ input::placeholder {
     position: absolute;
     width: 70%;
     height: 4px;
-    left: 11px;
-    top: 39px;
+    left: 15%;
+    top: 47%;
   };
-  
 }
 .burger::after,.burger::before {
   content: '';
@@ -231,13 +241,13 @@ input::placeholder {
   position: absolute;
   width: 70%;
   height: 4px;
-  left: 11px;
+  left: 15%;
 }
 .burger::after {
-  bottom: 19px;
+  bottom: 25%;
 }
 .burger::before {
-  top: 19px;
+  top: 25%;
 }
 ul.navbar-nav {
   display: flex;
@@ -254,5 +264,20 @@ ul.navbar-nav {
     font-size: 64px;
     line-height: 75px;
   }
-  
+  .nav__log-in {
+    width: 160px;
+    height: 80px;
+  }
+  .text-bold {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .text-25px {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .burger {
+    width: 80px;
+    height: 80px;
+  }
 }

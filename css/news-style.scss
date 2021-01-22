@@ -1,0 +1,225 @@
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+article > * + * {
+  margin-top: 1em;
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.text-bold {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(18px + (36 - 18) * ((100vw - 280px) / (1980 - 280)));
+  line-height: calc(21px + (42 - 21) * ((100vw - 280px) / (1980 - 280)));
+  color: #ffffff;
+}
+.text-25px {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(14px + (25 - 14) * ((100vw - 280px) / (1980 - 280)));
+  line-height: calc(16px + (29 - 16) * ((100vw - 280px) / (1980 - 280)));
+  color: #b3b3b3;
+}
+.container {
+  height: 100vh;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../imgs/osenniy-gorod 1.png' ) 0 0/cover no-repeat fixed;
+}
+.news {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+  background-color: rgba(242, 255, 240, 0.8);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  .news__head {
+    padding: 10px 0 5px 20px;
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+    background-color: rgba(72, 146, 59, 0.9);
+    backdrop-filter: blur(10px);
+  }
+  .news__body {
+    padding: 10px;
+    .avatar {
+      
+      border-radius: 50%;
+    }
+  }
+}
+.logo__text {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(36px + (64 - 36) * ((100vw - 280px) / (1140 - 280)));
+  line-height: calc(42px + (75 - 42) * ((100vw - 280px) / (1140 - 280)));
+  color: #05FF00;
+  text-shadow: 7px 7px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(1px);
+  padding: 10px;
+  span {
+    color: #fff;
+  }
+}
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+.nav__item {
+  width: 80px;
+  height: 80px;
+  background: rgba(70, 178, 52, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 5px;
+}
+.nav__log-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: calc(94px + (160 - 94) * ((100vw - 280px) / (1140 - 280)));
+  height: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
+  background: rgba(70, 178, 52, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  p {
+    color: #fff;
+  }
+}
+.nav__log-in:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-toggler {
+  padding: 0;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+.burger {
+  display: block;
+  position: relative;
+  width: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
+  height: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
+  background: rgba(70, 178, 52, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  span {
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    left: 15%;
+    top: 47%;
+  };
+}
+.burger::after,.burger::before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  left: 15%;
+}
+.burger::after {
+  bottom: 25%;
+}
+.burger::before {
+  top: 25%;
+}
+ul.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  li {
+    margin: 4px
+  }
+}
+@media (min-width: 1140px) {
+  .logo__text {
+    font-size: 64px;
+    line-height: 75px;
+  }
+  .nav__log-in {
+    width: 160px;
+    height: 80px;
+  }
+  .text-bold {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .text-25px {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .burger {
+    width: 80px;
+    height: 80px;
+  }
+}

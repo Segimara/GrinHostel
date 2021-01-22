@@ -101,7 +101,7 @@ body {
   background: url("../imgs/osenniy-gorod 1.png") 0 0/cover no-repeat fixed;
 }
 
-main {
+.news {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -111,10 +111,34 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   position: relative;
+  background-color: rgba(242, 255, 240, 0.8);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.news .news__head {
+  padding: 10px 0 5px 20px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(72, 146, 59, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.news .news__body {
+  padding: 10px;
+}
+
+.news .news__body .avatar {
+  border-radius: 50%;
 }
 
 .logo__text {
@@ -137,130 +161,8 @@ main {
   color: #fff;
 }
 
-.login-menu {
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: calc(30px + (50 - 30) * ((100vw - 280px) / (1980 - 280)));
-  width: calc(264px + (444 - 264) * ((100vw - 280px) / (1980 - 280)));
-  height: calc(309px + (519 - 309) * ((100vw - 280px) / (1980 - 280)));
-  background: rgba(159, 255, 142, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  border-radius: 30px;
-}
-
-.login-menu .login-menu__password {
-  margin-top: calc(35px + (50 - 35) * ((100vh - 280px) / (1980 - 280)));
-}
-
-.login-menu .login-menu__login, .login-menu .login-menu__password {
-  width: 100%;
-}
-
-.login-menu .login-menu__login .text-bold, .login-menu .login-menu__password .text-bold {
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 15px;
-}
-
-input {
-  padding: calc(2px + (5 - 2) * ((100vh - 280px) / (1980 - 280))) calc(5px + (10 - 5) * ((100vh - 280px) / (1980 - 280)));
-  width: 100%;
-  background: #FFFFFF;
-  border: 0;
-  -webkit-box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.15);
-          box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-}
-
-input:active {
-  outline: none;
-}
-
-input:focus {
-  outline: none;
-}
-
-input::-webkit-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 150%;
-  color: #BBBBBB;
-}
-
-input:-ms-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 150%;
-  color: #BBBBBB;
-}
-
-input::-ms-input-placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 150%;
-  color: #BBBBBB;
-}
-
-input::placeholder {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 150%;
-  color: #BBBBBB;
-}
-
-.login-menu__button {
-  background-color: #fff;
-  padding: 6px 75px;
-  border-radius: 10px;
-  margin: calc(24px + (40 - 24) * ((100vw - 280px) / (1980 - 280))) 0;
-  color: #2fd440;
-}
-
-.login-menu__button:hover {
-  color: #2fd440;
-  text-decoration: none;
-}
-
-.login-menu__forgot-password {
-  color: #DDDDDD;
-}
-
-.login-menu__forgot-password:hover {
-  color: #DDDDDD;
-  text-decoration: none;
-}
-
-.check-button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: calc(184px + (340 - 184) * ((100vw - 280px) / (1980 - 280)));
-  height: calc(54px + (100 - 54) * ((100vh - 280px) / (1980 - 280)));
-  background: rgba(159, 255, 142, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  border-radius: 30px;
-}
-
 .nav {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,8 +170,7 @@ input::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
+  padding: 0;
 }
 
 .nav__item {
@@ -296,8 +197,8 @@ input::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 160px;
-  height: 80px;
+  width: calc(94px + (160 - 94) * ((100vw - 280px) / (1140 - 280)));
+  height: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
   background: rgba(70, 178, 52, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -308,11 +209,24 @@ input::placeholder {
   color: #fff;
 }
 
+.nav__log-in:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
 .burger {
   display: block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
+  height: calc(55px + (80 - 55) * ((100vw - 280px) / (1140 - 280)));
   background: rgba(70, 178, 52, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -324,8 +238,8 @@ input::placeholder {
   position: absolute;
   width: 70%;
   height: 4px;
-  left: 11px;
-  top: 39px;
+  left: 15%;
+  top: 47%;
 }
 
 .burger::after, .burger::before {
@@ -334,15 +248,15 @@ input::placeholder {
   position: absolute;
   width: 70%;
   height: 4px;
-  left: 11px;
+  left: 15%;
 }
 
 .burger::after {
-  bottom: 19px;
+  bottom: 25%;
 }
 
 .burger::before {
-  top: 19px;
+  top: 25%;
 }
 
 ul.navbar-nav {
@@ -369,5 +283,21 @@ ul.navbar-nav li {
     font-size: 64px;
     line-height: 75px;
   }
+  .nav__log-in {
+    width: 160px;
+    height: 80px;
+  }
+  .text-bold {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .text-25px {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .burger {
+    width: 80px;
+    height: 80px;
+  }
 }
-/*# sourceMappingURL=index-style.css.map */
+/*# sourceMappingURL=news-style.css.map */
